@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Scene?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.stage.Stage?>
+
+<Stage xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="fr.simplon.resistron.LoginController">
+    <scene>
+        <Scene>
+            <AnchorPane prefHeight="429.0" prefWidth="606.0">
+            <children>
+               <TextField fx:id="mTextFieldResultat" layoutX="376.0" layoutY="337.0" prefHeight="32.0" prefWidth="160.0" />
+               <Button fx:id="mButtonCalculer" layoutX="134.0" layoutY="376.0" mnemonicParsing="false" onAction="#onButtonCalculer" prefHeight="31.0" prefWidth="112.0" text="CALCULER">
+                  <font>
+                     <Font size="15.0" />
+                  </font>
+               </Button>
+               <GridPane layoutX="26.0" layoutY="28.0" prefHeight="195.0" prefWidth="328.0">
+                 <columnConstraints>
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                   <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                     <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                 </columnConstraints>
+                 <rowConstraints>
+                   <RowConstraints maxHeight="73.0" minHeight="10.0" prefHeight="66.0" vgrow="SOMETIMES" />
+                   <RowConstraints maxHeight="75.0" minHeight="10.0" prefHeight="74.0" vgrow="SOMETIMES" />
+                   <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                 </rowConstraints>
+                  <children>
+                     <Button fx:id="mButtonnoir" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: black;" text="NOIR" textFill="WHITE">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                        <effect>
+                           <DropShadow />
+                        </effect>
+                     </Button>
+                     <Button fx:id="mButtonbrun" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: chocolate;" text="BRUN" GridPane.columnIndex="1">
+                        <font>
+                           <Font size="14.0" />
+                        </font>
+                        <effect>
+                           <DropShadow />
+                        </effect>
+                     </Button>
+                     <Button fx:id="mButtonrouge" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: red;" text="ROUGE" GridPane.columnIndex="2">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtonorange" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: orange;" text="ORANGE" GridPane.columnIndex="3">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtonjaune" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: YELLOW;" text="JAUNE" GridPane.rowIndex="1">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtonvert" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: GREEN;" text="VERT" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtonbleu" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: BLUE;" text="BLEU" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                        <font>
+                           <Font size="15.0" />
+                        </font>
+                        <effect>
+                           <DropShadow />
+                        </effect>
+                     </Button>
+                     <Button fx:id="Buttonviolet" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: PURPLE;" text="VIOLET" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtongris" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: GREY;" text="GRIS" textFill="WHITE" GridPane.rowIndex="2">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtonblanc" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: WHITE;" text="BLANC" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtonor" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: GOLD;" text="OR" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                     <Button fx:id="mButtonargent" mnemonicParsing="false" onAction="#onButtonClick" prefHeight="49.0" prefWidth="67.0" style="-fx-background-color: SILVER;" text="ARGENT" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                        <effect>
+                           <DropShadow />
+                        </effect></Button>
+                  </children>
+               </GridPane>
+
+               <MenuButton fx:id="mButtonMenu" layoutX="29.0" layoutY="245.0" mnemonicParsing="false" onAction="#onButtonMenu" prefHeight="25.0" prefWidth="322.0" text="Menu des anneaux">
+                 <items>
+                   <MenuItem mnemonicParsing="false" text="Anneau 1" onAction="#onAnneau1Click" />
+                   <MenuItem mnemonicParsing="false" text="Anneau 2" onAction="#onAnneau2Click"/>
+                     <MenuItem mnemonicParsing="false" text="Multiplicateur" onAction="#onAnneau3Click" />
+                     <MenuItem mnemonicParsing="false" text="Tolerance" onAction="#onAnneau4Click"/>
+                 </items>
+                  <opaqueInsets>
+                     <Insets />
+                  </opaqueInsets>
+               </MenuButton>
+               <Label layoutX="32.0" layoutY="338.0" prefHeight="31.0" prefWidth="61.0" text="Anneau 1" />
+               <Label layoutX="110.0" layoutY="338.0" prefHeight="31.0" prefWidth="69.0" text="Anneau 2" />
+               <Label layoutX="201.0" layoutY="338.0" prefHeight="31.0" prefWidth="94.0" text="Multiplicateur" />
+               <Label layoutX="283.0" layoutY="338.0" prefHeight="31.0" prefWidth="70.0" text="Resistance" />
+               <TextField fx:id="mTextFieldanneau1" layoutX="29.0" layoutY="306.0" prefHeight="32.0" prefWidth="67.0" />
+               <TextField fx:id="mTextFieldanneau2" layoutX="111.0" layoutY="307.0" prefHeight="31.0" prefWidth="67.0" />
+               <TextField fx:id="mTextFieldmultiplicateur" layoutX="201.0" layoutY="307.0" prefHeight="31.0" prefWidth="67.0" />
+               <TextField fx:id="mTextFieldresistance" layoutX="285.0" layoutY="305.0" prefHeight="34.0" prefWidth="67.0" />
+               <ImageView fitHeight="240.0" fitWidth="262.0" layoutX="369.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                  <image>
+                     <Image url="@image.png" />
+                  </image>
+               </ImageView>
+               <Label layoutX="555.0" layoutY="338.0" prefHeight="30.0" prefWidth="30.0" text="Ω">
+                  <font>
+                     <Font size="21.0" />
+                  </font>
+               </Label>
+               <Label layoutX="389.0" layoutY="295.0" prefHeight="35.0" prefWidth="95.0" text="Résultat">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Label layoutX="376.0" layoutY="383.0" prefHeight="17.0" prefWidth="63.0" text="Tolerance" />
+               <TextField fx:id="mTextFieldtolerance" layoutX="439.0" layoutY="379.0" prefHeight="25.0" prefWidth="98.0" />
+               <Label layoutX="556.0" layoutY="377.0" prefHeight="30.0" prefWidth="28.0" text="\%">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+               <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="34.0" layoutX="-5.0" layoutY="-2.0" stroke="BLACK" strokeType="INSIDE" width="611.0" />
+               <Label layoutX="23.0" layoutY="1.0" prefHeight="27.0" prefWidth="219.0" text="Calculateur de Résistance">
+                  <font>
+                     <Font size="18.0" />
+                  </font>
+               </Label>
+            </children></AnchorPane>
+        </Scene>
+    </scene>
+</Stage>

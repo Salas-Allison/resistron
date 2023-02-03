@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"fr.simplon.resistron","l":"HelloApplication"},{"p":"fr.simplon.resistron","l":"HelloController"},{"p":"fr.simplon.resistron","l":"LoginApplication"},{"p":"fr.simplon.resistron","l":"LoginController"}];updateSearchResults();
